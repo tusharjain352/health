@@ -1,0 +1,173 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>BMI Calculator</title>
+  <link href="https://www.maxbupa.com/style library/maxbupa/library/css/common/common.css" rel="stylesheet" />
+<style type="text/css">
+.width-654-box {
+    float: left;
+    margin: 0 5px 0 0;
+    width: 654px;
+}
+html, body { height:100%;}
+body { padding:0px; margin:0px;}
+.frmnwtop { overflow:hidden; padding:10px 10px;}
+ul.frmtd { overflow:hidden; padding:40px 0px 0px 0px; margin:0px; list-style-type:none;}
+ul.frmtd li { float:left; padding:0px; margin:0px; list-style-type:none;}
+ul.frmtd li.lft { width:120px; padding-right:10px; font-size:14px; color:#4d4d4d; padding-top:3px;}
+ul.frmtd li.rht { width:180px; padding-right:10px;}
+.frmfldnw { width:90%; padding:4px 4%; border:1px solid #cccccc;}
+ul.frmtd li.btnbx { width:auto; padding-left:120px; font-size:14px; color:#4d4d4d; padding-top:20px;}
+.sbmtbtnnw { background:#04adf0; border:none;  font-size:14px; color:#ffffff; padding:5px 10px; cursor:pointer;}
+.popbxoverlay { position:fixed; width:100%; height:100%; background:#000000; opacity:0.8;  z-index:991; left:0px; top:0px;}
+.popupbxnw { position:absolute; top:50%; left:50%; width:400px; height:260px; margin-left:-200px; margin-top:-130px; z-index:999;}
+.popupbxnwinr { overflow:hidden; background:#ffffff; border:3px solid #04adf0; padding:30px;}
+.popfrmtr { overflow:hidden; padding-bottom:15px;}
+.popfrmtdlft { width:100%; padding-bottom:10px;   font-size:14px; color:#4d4d4d; padding-top:3px; }
+.popfrmtdrht { width:100%;  font-size:14px; color:#4d4d4d; padding-bottom:10px; }
+.closenw { position:absolute; right:4px; top:5px; background: url(closenw.png) no-repeat left top; text-decoration:none; cursor:pointer; width:15px; height:15px;}
+.sbmtbtnnw.sbmtbtnnw-reset{margin-top:2px;}
+
+</style>
+    <script language="JavaScript">
+<!--
+    function openBmi() {
+			jQuery('.popupbxnw').fadeIn();
+			jQuery('.popbxoverlay').fadeIn();
+	}
+    function closeBmi() {
+		jQuery('.popupbxnw').fadeOut();
+		jQuery('.popbxoverlay').fadeOut();
+	}
+   function isNumberKey(evt)
+   {
+	  var charCode = (evt.which) ? evt.which : evt.keyCode;
+	  if (charCode != 46 && charCode > 31 
+		&& (charCode < 48 || charCode > 57))
+		 return false;
+
+	  return true;
+   }	
+    function calculateBmi() {
+        var weight = document.bmiForm.weight.value
+        var height = document.bmiForm.height.value
+        if (weight > 0 && height > 0) {
+            var finalBmi = weight / (height / 100 * height / 100)
+            document.bmiForm.bmi.value = finalBmi
+            if (finalBmi < 18.5) {
+                document.bmiForm.meaning.value = "That you are too thin."
+            }
+            if (finalBmi > 18.5 && finalBmi < 25) {
+                document.bmiForm.meaning.value = "That you are healthy."
+            }
+            if (finalBmi > 25) {
+                document.bmiForm.meaning.value = "That you have overweight."
+            }
+			openBmi()
+        }
+        else {
+            alert("Please Fill in everything correctly")
+        }
+    }
+    //-->
+    </script>
+    <script type="text/javascript" src="jquery_min.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+   jQuery('.closenw').click(function() {
+	closeBmi()		
+    });
+	   });
+    
+    </script>
+    
+    
+</head>
+<body>
+<div class="width-654-box">
+<div class="BoxHolder323">
+        <div class="topholder">
+            <div class="leftsec">
+                &nbsp;</div>
+            <div class="midsec width-97per">
+                &nbsp;</div>
+            <div class="rightsec">
+                &nbsp;</div>
+            &nbsp;</div>
+        <div class="midholder-insurance-agents width-96.8per">
+            <h1 class="headh1">
+                BMI Calculator</h1>
+            <div class="c-s-content intro">
+            <form name="bmiForm">
+            <div class="frmnwtop">
+            <ul class="frmtd">
+            <li class="lft">Your Weight(kg): </li><li class="rht"> <input type="text" name="weight" onkeypress="return isNumberKey(event)"  size="10" class="frmfldnw" /></li>
+            <li class="lft">Your Height(cm): </li><li class="rht"><input type="text" name="height" onkeypress="return isNumberKey(event)"  size="10" class="frmfldnw" /></li>
+            <li class="btnbx">  <input type="button" class="sbmtbtnnw" value="Calculate BMI" onclick="calculateBmi()" />
+			<input type="reset" class="sbmtbtnnw sbmtbtnnw-reset" value="Reset"></li>
+            </ul>
+            </div>
+            
+            
+            <div class="popupbxnw" id="bmi_cal" style="display:none">
+            <a href="javascript:void(0)" class="closenw"></a>
+            <div class="popupbxnwinr">
+           
+            <div class="popfrmtdlft">Your BMI:</div>
+            <div class="popfrmtdrht"> <input type="text" name="bmi" size="10" class="frmfldnw" disabled/></div>
+            
+            
+           
+            <div class="popfrmtdlft"> This Means:</div>
+            <div class="popfrmtdrht">  <input type="text" name="meaning" class="frmfldnw" size="25" disabled/></div>
+         
+            
+          
+          
+            <div class="popfrmtdrht">  <input type="button" onclick="closeBmi()" value="Close" class="sbmtbtnnw" /></div>
+          
+            
+            </div>
+      
+       
+            </div>
+            
+            <div class="popbxoverlay" style="display:none"></div>
+            
+            
+              </form>
+              
+            
+              
+        
+     
+  
+               
+               
+              
+                
+                
+            </div>
+
+        </div>
+        
+        
+        <div class="bottomholder">
+                <div class="leftsec">
+                    &nbsp;</div>
+                <div class="midsec width-97per">
+                    &nbsp;</div>
+                <div class="rightsec">
+                    &nbsp;</div>
+                &nbsp;</div>
+        
+</div>
+
+</div>
+
+
+    
+</body>
+</html>
+

@@ -1,0 +1,513 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://www.maxbupa.com/style library/maxbupa/library/css/common/common.css" rel="stylesheet" />
+<style type="text/css">
+.width-654-box {
+    float: left;
+    margin: 0 5px 0 0;
+    width: 654px;
+}
+html, body { height:100%;}
+body { padding:0px; margin:0px;}
+.inrbxnw { overflow:hidden; padding:0px 20px 20px 20px;}
+#QuestionTable td { font-size:15px; color:#4d4d4d; }
+#QuestionTable td.hdnw { color:#ffffff;  font-size:15px; padding:10px 10px; font-weight:bold;}
+.frmnwtop { overflow:hidden; padding:10px 10px;}
+ul.frmtd { overflow:hidden; padding:40px 0px 0px 0px; margin:0px; list-style-type:none;}
+ul.frmtd li { float:left; padding:0px; margin:0px; list-style-type:none;}
+ul.frmtd li.lft { width:120px; padding-right:10px; font-size:14px; color:#4d4d4d; padding-top:3px;}
+ul.frmtd li.rht { width:180px; padding-right:10px;}
+.frmfldnw { width:90%; padding:4px 4%; border:1px solid #cccccc;}
+ul.frmtd li.btnbx { width:120px; padding-left:120px; font-size:14px; color:#4d4d4d; padding-top:20px;}
+.sbmtbtnnw { background:#04adf0; border:none;  font-size:14px; color:#ffffff; padding:5px 10px; pointer:cursor; }
+.popbxoverlay { position:fixed; width:100%; height:100%; background:#000000; opacity:0.8;  z-index:991; left:0px; top:0px; display:none;}
+.popupbxnw { position:absolute; top:50%; left:50%; width:400px; height:260px; margin-left:-200px; margin-top:-130px; z-index:999; display:none;}
+.popupbxnwinr { overflow:hidden; background:#ffffff; border:3px solid #04adf0; padding:30px;}
+.popfrmtr { overflow:hidden; padding-bottom:15px;}
+.popfrmtdlft { width:100%; padding-bottom:10px;   font-size:14px; color:#4d4d4d; padding-top:3px; }
+.popfrmtdrht { width:100%;  font-size:14px; color:#4d4d4d; padding-bottom:10px; }
+.closenw { position:absolute; right:4px; top:5px; background: url(closenw.png) no-repeat left top; text-decoration:none; cursor:pointer; width:15px; height:15px;}
+.btn-signnew { overflow:hidden; padding-top:20px; text-align:right;}
+.btn-signnew a { display:inline-block; text-decoration:none;}
+input[type=radio]{cursor:pointer;}
+
+.resulttext strong { font-size: larger;}
+.disclaimer { font-size: smaller;}
+
+.info {
+    font-size: 15px;
+    color: #4d4d4d;
+}
+.padbtm { padding-bottom:15px; padding-top:15px;}
+.pdngbtm5 { padding-bottom:7px;}
+</style> 
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            // When clicking on the button close or the mask layer the popup closed
+            $('a.closenw, #mask').click(function () {
+                $('#mask , .popupbxnw, .popbxoverlay').fadeOut(300, function () {
+                    $('#mask').remove();
+                });
+                return false;
+            });
+        });
+</script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="width-654-box">
+<div class="BoxHolder323">
+        <div class="topholder">
+            <div class="leftsec">
+                &nbsp;</div>
+            <div class="midsec width-97per">
+                &nbsp;</div>
+            <div class="rightsec">
+                &nbsp;</div>
+            &nbsp;</div>
+        <div class="midholder-insurance-agents width-96.8per">
+            <h1 class="headh1">
+                Stress Level Evaluator</h1>
+            <p class="info"><br />Please Pick the option that best supports the statement based on your feelings and experiences <strong>during the past one month</strong>.</p>
+            <div class="c-s-content intro">
+            <div class="inrbxnw">
+                     
+            
+           <table id="QuestionTable" border="0"  cellspacing="0" cellpadding="0" width="100%">
+               <tr>
+                  <td width="100%" colspan="6" class="QuestionTable">
+                  <table width="100%" border="0"  cellspacing="0" cellpadding="0" >
+							<tr>
+							  <td class="padbtm"> 1.	Life teaches us to expect the unexpected. How often have you been upset due to something that happened unexpectedly? </td>
+				    </tr>
+							<tr>
+								 <td  class="pdngbtm5">
+                       <input type="radio" id="Never" class="cssNever" name="RadioQ1" /> Never
+                   </td>
+								
+							</tr>
+                            
+                            <tr>
+							  <td  class="pdngbtm5"> <input type="radio" id="Rarely" class="cssRarely" name="RadioQ1" />
+
+						      Rarely</td>
+								
+							</tr>
+					<tr>
+					  <td  class="pdngbtm5"><input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ1" />
+				      Sometimes</td></tr>
+					
+        <tr>
+          <td  class="pdngbtm5"> <input type="radio" id="Fairlyoften" class="cssFairlyoften" name="RadioQ1" />
+            Fairly Often</td>
+        </tr>
+        <tr>
+								<td  class="pdngbtm5"><input type="radio" id="Veryoften" class="cssVeryoften" name="RadioQ1" />
+							    Very Often</td>
+								
+					</tr>
+							<tr>
+		
+								<td></td>
+							</tr>
+						</table></td>
+              </tr>
+               <tr>
+                 <td colspan="6" class="QuestionTable"><table border="0"  cellspacing="0" cellpadding="0" width="100%" >
+                   <tr>
+                     <td class="padbtm">2.	You can't control everything. How often have you felt that you were unable to control the important things in life? </td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Never" class="cssNever" name="RadioQ2" />
+                       Never</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"> <input type="radio" id="Rarely" class="cssRarely" name="RadioQ2" />
+                       Rarely</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"> <input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ2" />
+                       Sometimes</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5">  <input type="radio" id="Fairlyoften" class="cssFairlyoften" name="RadioQ2" />
+                       Fairly Often</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Veryoften" class="cssVeryoften" name="RadioQ2" />
+                       Very Often</td>
+                   </tr>
+                   <tr>
+                     <td></td>
+                   </tr>
+                 </table></td>
+               </tr>
+               <tr>
+                 <td colspan="6" class="QuestionTable"><table border="0"  cellspacing="0" cellpadding="0" width="100%">
+                   <tr>
+                     <td class="padbtm">3.	In today's fast-paced world, stress is inevitable. How often have you felt nervous and stressed out? </td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5">
+                     <input type="radio" id="Never" class="cssNever" name="RadioQ3" />
+                       Never</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Rarely" class="cssRarely" name="RadioQ3" />
+                       Rarely</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ3" />
+                       Sometimes</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Fairlyoften" class="cssFairlyoften" name="RadioQ3" />
+                       Fairly Often</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Veryoften" class="cssVeryoften" name="RadioQ3" />
+                       Very Often</td>
+                   </tr>
+                   <tr>
+                     <td></td>
+                   </tr>
+                 </table></td>
+               </tr>
+               <tr>
+                 <td colspan="6" class="QuestionTable"><table border="0"  cellspacing="0" cellpadding="0" width="100%">
+                   <tr>
+                     <td class="padbtm">4.	Confidence is key to leading a happy life. How often have you felt confident about your ability to handle your personal problems? </td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"> <input type="radio" id="Never" class="cssVeryoften" name="RadioQ4" />
+                       Never</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Rarely" class="cssFairlyoften" name="RadioQ4" />
+                       Rarely</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ4" />
+                       Sometimes</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Fairlyoften" class="cssRarely" name="RadioQ4" />
+                       Fairly Often</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"> <input type="radio" id="Veryoften" class="cssNever" name="RadioQ4" />
+                       Very Often</td>
+                   </tr>
+                   <tr>
+                     <td></td>
+                   </tr>
+                 </table></td>
+               </tr>
+               <tr>
+                 <td colspan="6" class="QuestionTable"><table border="0"  cellspacing="0" cellpadding="0" width="100%">
+                   <tr>
+                     <td class="padbtm">5.	You are the driver of your own life. How often have you felt that things were going your way? </td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"> <input type="radio" id="Never" class="cssVeryoften" name="RadioQ5" />
+                       Never</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Rarely" class="cssFairlyoften" name="RadioQ5" />
+                       Rarely</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ5" />
+                       Sometimes</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5">     <input type="radio" id="Fairlyoften" class="cssRarely" name="RadioQ5" />
+                       Fairly Often</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Veryoften" class="cssNever" name="RadioQ5" />
+                       Very Often</td>
+                   </tr>
+                   <tr>
+                     <td></td>
+                   </tr>
+                 </table></td>
+               </tr>
+               <tr>
+                 <td colspan="6" class="QuestionTable"><table border="0"  cellspacing="0" cellpadding="0" width="100%">
+                   <tr>
+                     <td class="padbtm">6.	When the going gets tough, the tough get going. How often have you found that you could not cope with all the things that you had to do? </td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Never" class="cssNever" name="RadioQ6" />
+                       Never</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Rarely" class="cssRarely" name="RadioQ6" />
+                       Rarely</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ6" />
+                       Sometimes</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Fairlyoften" class="cssFairlyoften" name="RadioQ6" />
+                       Fairly Often</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Veryoften" class="cssVeryoften" name="RadioQ6" />
+                       Very Often</td>
+                   </tr>
+                   <tr>
+                     <td></td>
+                   </tr>
+                 </table></td>
+               </tr>
+               <tr>
+                 <td colspan="6" class="QuestionTable"><table border="0"  cellspacing="0" cellpadding="0" width="100%">
+                   <tr>
+                     <td class="padbtm">7.	Patience is a virtue. How often have you been able to control irritations in your life? </td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"> <input type="radio" id="Never" class="cssVeryoften" name="RadioQ7" />
+                       Never</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"> <input type="radio" id="Rarely" class="cssFairlyoften" name="RadioQ7" />
+                       Rarely</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"> <input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ7" />
+                       Sometimes</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"> <input type="radio" id="Fairlyoften" class="cssRarely" name="RadioQ7" />
+                       Fairly Often</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5">  <input type="radio" id="Veryoften" class="cssNever" name="RadioQ7" />
+                       Very Often</td>
+                   </tr>
+                   <tr>
+                     <td></td>
+                   </tr>
+                 </table></td>
+               </tr>
+               <tr>
+                 <td colspan="6" class="QuestionTable"><table border="0"  cellspacing="0" cellpadding="0" width="100%">
+                   <tr>
+                     <td class="padbtm">8.	It feels great to be in the know. How often have you felt that you were on top of things? </td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"> <input type="radio" id="Never" class="cssVeryoften" name="RadioQ8" />
+                       Never</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"> <input type="radio" id="Rarely" class="cssFairlyoften" name="RadioQ8" />
+                       Rarely</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"> <input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ8" />
+                       Sometimes</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Fairlyoften" class="cssRarely" name="RadioQ8" />
+                       Fairly Often</td>
+                   </tr>
+                   <tr>
+                     <td  class="pdngbtm5"><input type="radio" id="Veryoften" class="cssNever" name="RadioQ8" />
+                       Very Often</td>
+                   </tr>
+                   <tr>
+                     <td></td>
+                   </tr>
+                 </table></td>
+               </tr>
+               <tr>
+                 <td colspan="6" class="QuestionTable"><table border="0"  cellspacing="0" cellpadding="0" width="100%">
+                   <tr>
+                     <td class="padbtm">9.	We cannot direct the wind, but we can adjust the sails*. How often have you been angry because of things that happened that were outside of your control? </td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Never" class="cssNever" name="RadioQ9" />
+                       Never</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Rarely" class="cssRarely" name="RadioQ9" />
+                       Rarely</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ9" />
+                       Sometimes</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Fairlyoften" class="cssFairlyoften" name="RadioQ9" />
+                       Fairly Often</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Veryoften" class="cssVeryoften" name="RadioQ9" />
+                       Very Often</td>
+                   </tr>
+                   <tr>
+                     <td></td>
+                   </tr>
+                 </table></td>
+               </tr>
+               <tr>
+                 <td colspan="6" class="QuestionTable"><table border="0"  cellspacing="0" cellpadding="0" width="100%">
+                   <tr>
+                     <td class="padbtm">10.	Challenges are the stepping stones to a better life. How often have you felt that difficulties are piling up so high that you cannot overcome them? </td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Never" class="cssNever" name="RadioQ10" />
+                       Never</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Rarely" class="cssRarely" name="RadioQ10" />
+                       Rarely</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"><input type="radio" id="Sometimes" class="cssSometimes" name="RadioQ10" />
+                       Sometimes</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"> <input type="radio" id="Fairlyoften" class="cssFairlyoften" name="RadioQ10" />
+                       Fairly Often</td>
+                   </tr>
+                   <tr>
+                     <td class="pdngbtm5"> <input type="radio" id="Veryoften" class="cssVeryoften" name="RadioQ10" />
+                       Very Often</td>
+                   </tr>
+                   <tr>
+                     <td></td>
+                   </tr>
+                 </table></td>
+               </tr>
+              </table>
+            <br />
+            <span class="info">*Quote courtesy: Dolly Parton</span><br />
+            
+            <div class="btn-signnew">
+                <a href="#login-box" class="sbmtbtnnw login-window" id="Submit">Submit</a>
+             
+            </div>
+            </div>
+            </div>
+
+        </div>
+        
+        
+        <div class="bottomholder">
+                <div class="leftsec">
+                    &nbsp;</div>
+                <div class="midsec width-97per">
+                    &nbsp;</div>
+                <div class="rightsec">
+                    &nbsp;</div>
+                &nbsp;</div>
+        
+</div>
+
+</div>
+ 
+
+      <div id="login-box" class="popupbxnw">
+            <a href="javascript:void(0)" class="closenw"></a>
+            <div class="popupbxnwinr">
+           
+            <div class="popfrmtdlft" id="resultBox"> Result:- <span class="res_con"></span> </div>
+           
+            
+            
+           
+          
+            
+            </div>
+      
+       
+            </div>
+            
+            <div class="popbxoverlay"></div>    
+
+        <script>
+            $(document).ready(function () {
+
+                $('#Submit').click(function () {
+					if($('.QuestionTable').length == $("input[type=radio]:checked").length){
+                // Getting the variable's value from a link 
+                var loginBox = $(this).attr('href');
+
+                //Fade in the Popup and add close button
+                $(loginBox).fadeIn(300);
+				$('.popbxoverlay').fadeIn();
+                $('body').append('<div id="mask"></div>');
+                $('#mask').fadeIn(300);
+                    var hashtable = {};
+                    hashtable['cssNever'] = 0;
+                    hashtable['cssRarely'] = 1;
+                    hashtable['cssSometimes'] = 2;
+                    hashtable['cssFairlyoften'] = 3;
+                    hashtable['cssVeryoften'] = 4;
+
+                    var i = 1;
+                    var totalVal = 0;
+                    var TotalQuestionAnswered = 0;
+                    var AverageTotal = 0;
+                    $('.QuestionTable').each(function () {
+                        var Q1 = $("input[name=RadioQ" + i + "]:checked").attr('class');
+
+                        if (Q1 != undefined) {
+                            // alert(Q1);
+                            totalVal = totalVal + hashtable[Q1];
+                            TotalQuestionAnswered = TotalQuestionAnswered + 1
+                        }
+                        i = i + 1;
+                    });
+                    //  alert(totalVal);
+                    AverageTotal = totalVal;// / TotalQuestionAnswered;
+                    var textToShow = '';
+                    if (AverageTotal < 41) {
+                        textToShow = '<strong>Your stress level is HIGH</strong><br/><br/>';
+                        textToShow += 'You seem to have too much on your plate. Relieve your stress by doing some breathing exercises or listening to music. Get in touch with your healthcare professional to know how you can reduce your stress further.';
+                    }
+                    if (AverageTotal < 27) {
+                        textToShow = '<strong>Your stress level is MODERATE</strong><br/><br/>';
+                        textToShow += 'There seems to be some stress in your life. But, you are strong enough to cope with all the stress that comes your way. Feel free to chat with your healthcare professional to manage stress better.';
+                    }
+                    if (AverageTotal < 14) {
+                        textToShow = '<strong>Your stress level is LOW</strong><br/><br/>';
+                        textToShow += 'If life\'s a game, then you\'re playing it like a pro! You have a handle on things in your life. Maintain this level by leading an active and a healthy lifestyle.';
+                    }
+
+                    textToShow = '<span class=\"resulttext\">' + textToShow + '</span>';
+                    textToShow += '<span class=\"disclaimer\"><br/><br/><br/><strong>Disclaimer:</strong><br/>Please note that this test is only an indicator and is not a final diagnosis.This test should not be used as a substitute for advice from a medical professional.If you suspect you suffer from depression or stress, please contact your healthcare professional as soon as possible.</span>';
+
+
+                    
+                    $('#resultBox').html(textToShow);
+					//$('#login-box .res_con').html(AverageTotal);
+					$('#popup1').show();
+					}else{
+					alert("Please Answer all Questions")
+					}
+                }
+                    );
+
+            });
+
+        </script>
+        
+    </form>
+</body>
+</html>
+
